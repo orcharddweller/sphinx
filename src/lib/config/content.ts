@@ -1,4 +1,4 @@
-import type { Quiz, QuizThumbnail } from './types';
+import type { QuizData, QuizThumbnail } from '../types';
 
 export const thumbnails: QuizThumbnail[] = [
 	{
@@ -21,7 +21,7 @@ export const thumbnails: QuizThumbnail[] = [
 	}
 ];
 
-export const quizes: Quiz[] = [
+export const quizes: QuizData[] = [
 	{
 		id: 1,
 		title: 'Quiz 1',

@@ -3,7 +3,7 @@ export type Image = {
 	alt: string;
 };
 
-export type Question = {
+export type QuestionData = {
 	id: number;
 	image: Image | null;
 	question: string;
@@ -12,18 +12,18 @@ export type Question = {
 	explanation: string;
 };
 
-export type ScoreExplanation = {
+export type ScoreExplanationData = {
 	range: [number, number];
 	image: Image | null;
 	title: string;
 	explanation: string;
 };
 
-export type Quiz = {
+export type QuizData = {
 	id: number;
 	title: string;
-	questions: Question[];
-	score_explanations: ScoreExplanation[];
+	questions: QuestionData[];
+	score_explanations: ScoreExplanationData[];
 };
 
 export type QuizThumbnail = {
@@ -32,3 +32,5 @@ export type QuizThumbnail = {
 	description: string;
 	image: Image;
 };
+
+export type AnswerState = 'correct' | 'incorrect' | 'unanswered' | 'picked' | 'not-picked';

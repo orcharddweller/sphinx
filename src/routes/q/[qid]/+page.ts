@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
-import { quizes } from '$lib/content';
+import { quizes } from '$lib/config/content';
 
 /** @type {import('./$types').PageLoad} */
 export const load: PageLoad = ({ params }) => {

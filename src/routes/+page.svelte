@@ -1,15 +1,11 @@
 <script lang="ts">
-	import { thumbnails } from '$lib/content';
+	import { thumbnails } from '$lib/config/content';
 </script>
 
-<h1 class="text-7xl text-center">Welcome to Sphinx!</h1>
-
-<h2 class="text-5xl text-center">Available quizes:</h2>
-
-<div class="container mx-auto grid grid-flow-col">
+<div class="container mx-auto grid grid-flow-col-dense mt-24">
 	{#each thumbnails as { id, title, description, image }}
-		<div class="card w-96 bg-base-100 shadow-xl">
-			<figure><img src={image.src} alt={image.alt} /></figure>
+		<div class="card w-96 bg-base-300 shadow-xl mx-auto">
+			<figure><img class="w-96 h-60" src={image.src} alt={image.alt} /></figure>
 			<div class="card-body">
 				<h2 class="card-title">{title}</h2>
 				<p>{description}</p>

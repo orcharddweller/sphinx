@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { ScoreExplanation } from '$lib/types';
+	import type { ScoreExplanationData } from '$lib/types';
 
-	export let score_explanation: ScoreExplanation;
+	export let score_explanation: ScoreExplanationData;
 </script>
 
 <div class="mt-6">
