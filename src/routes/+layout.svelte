@@ -4,7 +4,10 @@
 
 	import { promoState } from '$lib/store';
 	import Footer from '$lib/config/Footer.svelte';
+	import Scripts from '$lib/config/Scripts.svelte';
 </script>
+
+<Scripts />
 
 <div class="min-h-screen relative">
 	<div class="navbar bg-base-300">
