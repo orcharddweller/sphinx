@@ -21,7 +21,7 @@ export const thumbnails: QuizThumbnail[] = [
 	}
 ];
 
-export const quizes: Record<Slug, QuizData> = {
+export const quizzes: Record<Slug, QuizData> = {
 	'quiz-1': {
 		title: 'Quiz 1',
 		twitterShareButton: {
