@@ -3,7 +3,7 @@
 	import { removeUndefined } from '$lib/utils';
 	import { match, P } from 'ts-pattern';
 
-	export let embed: EmbedData | null = null;
+	export let embed: EmbedData | undefined = undefined;
 
 	$: youtubeVideoSrc = match(embed)
 		.with(
@@ -30,7 +30,7 @@
 		});
 </script>
 
-{#if embed === null}
+{#if embed === undefined}
 	<div class="mx-auto w-96 h-64 glass" />
 {:else if 'youtubeVideoId' in embed}
 	<iframe

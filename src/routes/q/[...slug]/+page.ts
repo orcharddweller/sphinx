@@ -6,8 +6,6 @@ import { quizzes } from '$lib/config/content';
 export const load: PageLoad = ({ params }) => {
 	const quiz = quizzes[params.slug];
 
-	console.log(params.slug);
-
 	if (quiz) {
 		return {
 			quiz
