@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Question from '$lib/components/Question.svelte';
 	import Results from '$lib/components/Results.svelte';
-	import { browser } from '$app/environment';
 
 	import type { PageData } from './$types';
 	import TwitterShareButton from '$lib/components/TwitterShareButton.svelte';

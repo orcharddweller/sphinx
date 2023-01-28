@@ -7,7 +7,9 @@
 	<label class="modal-box relative bg-primary text-lg" for="">
 		<h2 class="text-3xl">You completed a quiz, congratulations 🎉!</h2>
 		I'm making videos about building apps like this one. If you want to learn more,
-		<a class="link" href="https://www.youtube.com/channel/@orcharddweller?sub_confirmation=1"
+		<a
+			class="link"
+			href="https://www.youtube.com/channel/UCxY_g4gOxS0-cxzmMFujDHw?sub_confirmation=1"
 			>subscribe to my YouTube channel</a
 		>. You can also go straight to the repo if you're feeling adventurous. The link is
 		<a class="link" href="https://github.com/the-orchard/sphinx">here</a>.
