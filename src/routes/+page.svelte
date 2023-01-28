@@ -1,8 +1,11 @@
 <script lang="ts">
 	import { thumbnails } from '$lib/config/content';
+	import { settings } from '$lib/config/settings';
 </script>
 
-<div class="container mx-auto grid grid-flow-col-dense mt-24">
+<title>{settings.title}</title>
+
+<div class="container mx-auto grid lg:grid-cols-2 xl:grid-cols-3 mt-24 space-y-6 lg:space-y-0">
 	{#each thumbnails as { id, title, description, image }}
 		<div class="card w-96 bg-base-300 shadow-xl mx-auto">
 			<figure><img class="w-96 h-60" src={image.src} alt={image.alt} /></figure>

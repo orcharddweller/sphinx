@@ -3,9 +3,23 @@ export type Image = {
 	alt: string;
 };
 
+export type YoutubeVideo = {
+	youtubeVideoId: string;
+};
+
+export type TwitterShareButtonProps = {
+	text: string;
+	startWithScore?: boolean;
+	shareQuizUrl?: boolean;
+	alternativeUrl?: string;
+	via?: string;
+	hashtags?: string[];
+	related?: string[];
+};
+
 export type QuestionData = {
 	id: number;
-	image: Image | null;
+	embed: Image | YoutubeVideo | null;
 	question: string;
 	answers: string[];
 	correctAnswer: number;
@@ -14,7 +28,7 @@ export type QuestionData = {
 
 export type ScoreExplanationData = {
 	range: [number, number];
-	image: Image | null;
+	embed: Image | YoutubeVideo | null;
 	title: string;
 	explanation: string;
 };
@@ -24,6 +38,7 @@ export type QuizData = {
 	title: string;
 	questions: QuestionData[];
 	score_explanations: ScoreExplanationData[];
+	twitter_share_button?: TwitterShareButtonProps;
 };
 
 export type QuizThumbnail = {
@@ -34,3 +49,5 @@ export type QuizThumbnail = {
 };
 
 export type AnswerState = 'correct' | 'incorrect' | 'unanswered' | 'picked' | 'not-picked';
+
+export type PromoState = 'hidden' | 'visible' | 'clicked';

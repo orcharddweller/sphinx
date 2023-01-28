@@ -7,7 +7,7 @@ export const thumbnails: QuizThumbnail[] = [
 		description: 'This is quiz 1',
 		image: {
 			src: 'https://picsum.photos/200/300',
-			alt: 'Random image'
+			alt: 'Random embed'
 		}
 	},
 	{
@@ -16,7 +16,7 @@ export const thumbnails: QuizThumbnail[] = [
 		description: 'This is quiz 2',
 		image: {
 			src: 'https://picsum.photos/200/300',
-			alt: 'Random image'
+			alt: 'Random embed'
 		}
 	}
 ];
@@ -25,12 +25,21 @@ export const quizes: QuizData[] = [
 	{
 		id: 1,
 		title: 'Quiz 1',
+		twitter_share_button: {
+			text: "It's a really cool quiz, you should try it out!",
+			startWithScore: true,
+			shareQuizUrl: true,
+			alternativeUrl: undefined,
+			via: 'sphinx',
+			hashtags: ['sphinx', 'quiz'],
+			related: ['sphinx', 'quiz']
+		},
 		questions: [
 			{
 				id: 1,
-				image: {
+				embed: {
 					src: 'https://picsum.photos/200/300',
-					alt: 'Random image'
+					alt: 'Random embed'
 				},
 				question: 'What is the capital of France?',
 				answers: ['Paris', 'London', 'Berlin', 'Rome'],
@@ -39,9 +48,9 @@ export const quizes: QuizData[] = [
 			},
 			{
 				id: 2,
-				image: {
+				embed: {
 					src: 'https://picsum.photos/200/300',
-					alt: 'Random image'
+					alt: 'Random embed'
 				},
 				question: 'What is the capital of Germany?',
 				answers: ['Paris', 'London', 'Berlin', 'Rome'],
@@ -50,7 +59,7 @@ export const quizes: QuizData[] = [
 			},
 			{
 				id: 3,
-				image: null,
+				embed: null,
 				question: 'What is the capital of Italy?',
 				answers: ['Paris', 'London', 'Berlin', 'Rome'],
 				correctAnswer: 3,
@@ -60,24 +69,24 @@ export const quizes: QuizData[] = [
 		score_explanations: [
 			{
 				range: [0, 1],
-				image: null,
+				embed: null,
 				title: 'You need to study more',
 				explanation: 'You need to study more to get a better score next time :('
 			},
 			{
 				range: [2, 3],
-				image: {
+				embed: {
 					src: 'https://picsum.photos/200/300',
-					alt: 'Random image'
+					alt: 'Random embed'
 				},
 				title: 'You did well',
 				explanation: 'You did well, but you can do better next time!'
 			},
 			{
 				range: [4, 5],
-				image: {
+				embed: {
 					src: 'https://picsum.photos/200/300',
-					alt: 'Random image'
+					alt: 'Random embed'
 				},
 				title: 'You did great!',
 				explanation: "You did great! You're a true expert!"
@@ -90,7 +99,9 @@ export const quizes: QuizData[] = [
 		questions: [
 			{
 				id: 1,
-				image: null,
+				embed: {
+					youtubeVideoId: 'lhj6lWVfavY'
+				},
 				question: 'What is the tallest mountain in the world?',
 				answers: ['Mount Everest', 'Mount Fuji', 'Mount Kilimanjaro', 'Mount McKinley'],
 				correctAnswer: 0,
@@ -100,9 +111,9 @@ export const quizes: QuizData[] = [
 		score_explanations: [
 			{
 				range: [0, 1],
-				image: {
+				embed: {
 					src: 'https://picsum.photos/200/300',
-					alt: 'Random image'
+					alt: 'Random embed'
 				},
 				title: 'You need to study more',
 				explanation: 'You need to study more to get a better score next time :('

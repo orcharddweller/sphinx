@@ -1,4 +1,4 @@
-<div class="flex h-[80vh]">
+<div class="flex h-[90vh]">
 	<div class="m-auto">
 		<slot />
 	</div>
