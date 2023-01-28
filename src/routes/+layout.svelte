@@ -3,6 +3,7 @@
 	import '../app.css';
 
 	import { promoState } from '$lib/store';
+	import Footer from '$lib/config/Footer.svelte';
 </script>
 
 <div class="min-h-screen relative">
@@ -23,8 +24,6 @@
 	</div>
 
 	<div class="text-center absolute bottom-0 w-full h-12 py-2">
-		by <a class="link link-primary" href="https://www.youtube.com/@orcharddweller"
-			>Orchard Dweller</a
-		>
+		<Footer />
 	</div>
 </div>
