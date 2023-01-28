@@ -34,7 +34,7 @@
 	{#each question.answers as answer, index}
 		<Answer
 			state={reviewMode
-				? pickedAnswer === index && index === question.correctAnswer
+				? index === question.correctAnswer
 					? 'correct'
 					: pickedAnswer === index && index !== question.correctAnswer
 					? 'incorrect'

@@ -16,18 +16,20 @@
 		props.alternativeUrl ??
 		(props.shareQuizUrl ? (browser ? window.location.href : undefined) : undefined);
 
-	$: searchParams = new URLSearchParams(
-		pickBy(
-			{
-				text,
-				url,
-				hashtags: props.hashtags?.join(','),
-				via: props.via,
-				related: props.related?.join(',')
-			},
-			(value: string | undefined) => value !== undefined
-		)
+	let _params: Record<string, string>;
+
+	$: _params = pickBy(
+		{
+			text,
+			url,
+			hashtags: props.hashtags?.join(','),
+			via: props.via,
+			related: props.related?.join(',')
+		},
+		(value: string | undefined) => value !== undefined
 	);
+
+	$: searchParams = new URLSearchParams(_params);
 </script>
 
 <a
