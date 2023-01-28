@@ -12,32 +12,19 @@
 			<div
 				class="flex space-x-0 sm:space-x-2 flex-col sm:flex-row mx-2 sm:mx-0 sm:space-y-0 space-y-2"
 			>
-				<div class="bg-white flex px-4 rounded-lg shadow-md">
-					<div class="m-auto">
-						<a
-							href="https://twitter.com/_orcharddweller?ref_src=twsrc%5Etfw"
-							class="twitter-follow-button"
-							data-size="large"
-							data-show-screen-name="false"
-							data-dnt="true"
-							data-show-count="false">Follow @_orcharddweller</a
-						><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-					</div>
-				</div>
+				<a
+					href="https://twitter.com/intent/follow?screen_name=_orcharddweller"
+					class="btn btn-primary"
+				>
+					Follow on Twitter</a
+				>
 				<a class="btn btn-primary" href="https://github.com/the-orchard/sphinx">Visit github</a>
-				<div class="bg-white flex px-4 rounded-lg shadow-md">
-					<div class="m-auto">
-						<script src="https://apis.google.com/js/platform.js"></script>
-
-						<div
-							class="g-ytsubscribe"
-							data-channelid="UCxY_g4gOxS0-cxzmMFujDHw"
-							data-layout="default"
-							data-theme="dark"
-							data-count="default"
-						/>
-					</div>
-				</div>
+				<a
+					class="btn btn-primary"
+					href="https://www.youtube.com/channel/UCxY_g4gOxS0-cxzmMFujDHw?sub_confirmation=1"
+				>
+					Subscribe to YouTube</a
+				>
 			</div>
 		</div>
 	</div>
