@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import type { TwitterShareButtonProps } from '$lib/types';
-	import { pickBy } from 'lodash-es';
+	import { removeUndefined } from '$lib/utils';
 
 	export let quizTitle: string;
 	export let numQuestions: number;
@@ -16,20 +16,15 @@
 		props.alternativeUrl ??
 		(props.shareQuizUrl ? (browser ? window.location.href : undefined) : undefined);
 
-	let _params: Record<string, string>;
-
-	$: _params = pickBy(
-		{
+	$: searchParams = new URLSearchParams(
+		removeUndefined({
 			text,
 			url,
 			hashtags: props.hashtags?.join(','),
 			via: props.via,
 			related: props.related?.join(',')
-		},
-		(value: string | undefined) => value !== undefined
+		})
 	);
-
-	$: searchParams = new URLSearchParams(_params);
 </script>
 
 <a

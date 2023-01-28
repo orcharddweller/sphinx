@@ -39,6 +39,7 @@
 		"@types/lodash-es": "^4.17.6",
 		"daisyui": "^2.49.0",
 		"lodash": "^4.17.21",
-		"lodash-es": "^4.17.21"
+		"lodash-es": "^4.17.21",
+		"ts-pattern": "^4.1.3"
 	}
 }

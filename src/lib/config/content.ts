@@ -55,7 +55,6 @@ export const quizzes: Record<Slug, QuizData> = {
 				explanation: 'The capital of Germany is Berlin'
 			},
 			{
-				embed: null,
 				question: 'What is the capital of Italy?',
 				answers: ['Paris', 'London', 'Berlin', 'Rome'],
 				correctAnswer: 3,
@@ -65,7 +64,6 @@ export const quizzes: Record<Slug, QuizData> = {
 		scoreExplanations: [
 			{
 				range: [0, 1],
-				embed: null,
 				title: 'You need to study more',
 				explanation: 'You need to study more to get a better score next time :('
 			},
@@ -104,7 +102,10 @@ export const quizzes: Record<Slug, QuizData> = {
 			},
 			{
 				embed: {
-					youtubeVideoId: 'lhj6lWVfavY'
+					youtubeVideoId: 'lhj6lWVfavY',
+					start: 100,
+					end: 200,
+					autoplay: true
 				},
 				question: 'What is the tallest mountain in the world?',
 				answers: ['Mount Everest', 'Mount Fuji', 'Mount Kilimanjaro', 'Mount McKinley'],

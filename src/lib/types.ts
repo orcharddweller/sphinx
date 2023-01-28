@@ -7,7 +7,12 @@ export type Image = {
 
 export type YoutubeVideo = {
 	youtubeVideoId: string;
+	start?: number;
+	end?: number;
+	autoplay?: boolean;
 };
+
+export type EmbedData = Image | YoutubeVideo;
 
 export type TwitterShareButtonProps = {
 	text: string;
@@ -20,7 +25,7 @@ export type TwitterShareButtonProps = {
 };
 
 export type QuestionData = {
-	embed: Image | YoutubeVideo | null;
+	embed?: EmbedData;
 	question: string;
 	answers: string[];
 	correctAnswer: number;
@@ -29,7 +34,7 @@ export type QuestionData = {
 
 export type ScoreExplanationData = {
 	range: [number, number];
-	embed: Image | YoutubeVideo | null;
+	embed?: EmbedData;
 	title: string;
 	explanation: string;
 };
