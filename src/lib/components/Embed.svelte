@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { settings } from '$lib/config/settings';
 	import type { EmbedData } from '$lib/types';
 	import { removeUndefined } from '$lib/utils';
 	import { match, P } from 'ts-pattern';
@@ -22,7 +23,11 @@
 					})
 				);
 
-				return `https://www.youtube.com/embed/${v.youtubeVideoId}?${searchParams}`;
+				const url = settings.allowYouTubeCookies
+					? new URL('https://www.youtube.com/embed/')
+					: new URL('https://www.youtube-nocookie.com/embed/');
+
+				return `${url}${v.youtubeVideoId}?${searchParams}`;
 			}
 		)
 		.otherwise(() => {

@@ -1,7 +1,5 @@
-const menuName = 'Sphinx';
-const title = 'Sphinx - an open-source quiz app';
+const allowYouTubeCookies = false;
 
 export const settings = {
-	title,
-	menuName
+	allowYouTubeCookies
 };

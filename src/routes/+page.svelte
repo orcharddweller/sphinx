@@ -1,9 +1,9 @@
 <script lang="ts">
+	import { branding } from '$lib/config/branding';
 	import { thumbnails } from '$lib/config/content';
-	import { settings } from '$lib/config/settings';
 </script>
 
-<title>{settings.title}</title>
+<title>{branding.title}</title>
 
 <div
 	class="container mx-auto grid lg:grid-cols-2 xl:grid-cols-3 mt-4 lg:mt-24 space-y-6 lg:space-y-0"
