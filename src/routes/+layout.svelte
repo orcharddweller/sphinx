@@ -7,7 +7,7 @@
 	import Scripts from '$lib/config/Scripts.svelte';
 </script>
 
-<Scripts />
+<svelte:head><Scripts /></svelte:head>
 
 <div class="min-h-screen relative">
 	<div class="navbar bg-base-300">
