@@ -1,3 +1,5 @@
+export type Slug = string;
+
 export type Image = {
 	src: string;
 	alt: string;
@@ -18,7 +20,6 @@ export type TwitterShareButtonProps = {
 };
 
 export type QuestionData = {
-	id: number;
 	embed: Image | YoutubeVideo | null;
 	question: string;
 	answers: string[];
@@ -34,15 +35,15 @@ export type ScoreExplanationData = {
 };
 
 export type QuizData = {
-	id: number;
 	title: string;
 	questions: QuestionData[];
-	score_explanations: ScoreExplanationData[];
-	twitter_share_button?: TwitterShareButtonProps;
+	scoreExplanations: ScoreExplanationData[];
+	startButtonText?: string;
+	twitterShareButton?: TwitterShareButtonProps;
 };
 
 export type QuizThumbnail = {
-	id: number;
+	slug: Slug;
 	title: string;
 	description: string;
 	image: Image;

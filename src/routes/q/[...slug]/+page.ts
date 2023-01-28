@@ -4,7 +4,9 @@ import { quizes } from '$lib/config/content';
 
 /** @type {import('./$types').PageLoad} */
 export const load: PageLoad = ({ params }) => {
-	const quiz = quizes.find((quiz) => quiz.id === Number(params.qid));
+	const quiz = quizes[params.slug];
+
+	console.log(params.slug);
 
 	if (quiz) {
 		return {

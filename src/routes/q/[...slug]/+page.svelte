@@ -26,7 +26,7 @@
 		.reduce((a: number, b) => a + b, 0);
 
 	const getScoreExplanation = () => {
-		const res = quiz.score_explanations.find(
+		const res = quiz.scoreExplanations.find(
 			(score_explanation) =>
 				score_explanation.range[0] <= score && score_explanation.range[1] >= score
 		);
@@ -69,12 +69,12 @@
 						questionIdx = 0;
 					}}>Review</button
 				>
-				{#if quiz.twitter_share_button !== undefined}
+				{#if quiz.twitterShareButton !== undefined}
 					<TwitterShareButton
 						quizTitle={quiz.title}
 						numQuestions={quiz.questions.length}
 						{score}
-						props={quiz.twitter_share_button}
+						props={quiz.twitterShareButton}
 					/>
 				{/if}
 

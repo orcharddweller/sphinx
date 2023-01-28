@@ -1,8 +1,8 @@
-import type { QuizData, QuizThumbnail } from '../types';
+import type { QuizData, QuizThumbnail, Slug } from '../types';
 
 export const thumbnails: QuizThumbnail[] = [
 	{
-		id: 1,
+		slug: 'quiz-1',
 		title: 'Quiz 1',
 		description: 'This is quiz 1',
 		image: {
@@ -11,7 +11,7 @@ export const thumbnails: QuizThumbnail[] = [
 		}
 	},
 	{
-		id: 2,
+		slug: 'quiz-2/the-mega-quiz',
 		title: 'Quiz 2',
 		description: 'This is quiz 2',
 		image: {
@@ -21,11 +21,10 @@ export const thumbnails: QuizThumbnail[] = [
 	}
 ];
 
-export const quizes: QuizData[] = [
-	{
-		id: 1,
+export const quizes: Record<Slug, QuizData> = {
+	'quiz-1': {
 		title: 'Quiz 1',
-		twitter_share_button: {
+		twitterShareButton: {
 			text: "It's a really cool quiz, you should try it out!",
 			startWithScore: true,
 			shareQuizUrl: true,
@@ -36,7 +35,6 @@ export const quizes: QuizData[] = [
 		},
 		questions: [
 			{
-				id: 1,
 				embed: {
 					src: 'https://picsum.photos/200/300',
 					alt: 'Random embed'
@@ -47,7 +45,6 @@ export const quizes: QuizData[] = [
 				explanation: 'The capital of France is Paris'
 			},
 			{
-				id: 2,
 				embed: {
 					src: 'https://picsum.photos/200/300',
 					alt: 'Random embed'
@@ -58,7 +55,6 @@ export const quizes: QuizData[] = [
 				explanation: 'The capital of Germany is Berlin'
 			},
 			{
-				id: 3,
 				embed: null,
 				question: 'What is the capital of Italy?',
 				answers: ['Paris', 'London', 'Berlin', 'Rome'],
@@ -66,7 +62,7 @@ export const quizes: QuizData[] = [
 				explanation: 'The capital of Italy is Rome'
 			}
 		],
-		score_explanations: [
+		scoreExplanations: [
 			{
 				range: [0, 1],
 				embed: null,
@@ -93,12 +89,20 @@ export const quizes: QuizData[] = [
 			}
 		]
 	},
-	{
-		id: 2,
+	'quiz-2/the-mega-quiz': {
 		title: 'Quiz 2',
+		startButtonText: 'Or this one!',
 		questions: [
 			{
-				id: 1,
+				embed: {
+					youtubeVideoId: 'lhj6lWVfavY'
+				},
+				question: 'What is the tallest mountain in the world?',
+				answers: ['Mount Everest', 'Mount Fuji', 'Mount Kilimanjaro', 'Mount McKinley'],
+				correctAnswer: 0,
+				explanation: 'Mount Everest is the tallest mountain in the world'
+			},
+			{
 				embed: {
 					youtubeVideoId: 'lhj6lWVfavY'
 				},
@@ -108,16 +112,16 @@ export const quizes: QuizData[] = [
 				explanation: 'Mount Everest is the tallest mountain in the world'
 			}
 		],
-		score_explanations: [
+		scoreExplanations: [
 			{
-				range: [0, 1],
+				range: [0, 2],
 				embed: {
 					src: 'https://picsum.photos/200/300',
 					alt: 'Random embed'
 				},
-				title: 'You need to study more',
-				explanation: 'You need to study more to get a better score next time :('
+				title: 'You are a true quizzer!',
+				explanation: 'That was so much fun, you should try another quiz!'
 			}
 		]
 	}
-];
+};
