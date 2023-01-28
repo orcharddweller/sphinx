@@ -1,42 +1,38 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@playwright/test': ^1.28.1
-  '@sveltejs/adapter-auto': ^1.0.0
-  '@sveltejs/kit': ^1.0.0
+  '@playwright/test': ^1.30.0
+  '@sveltejs/adapter-auto': ^1.0.2
+  '@sveltejs/kit': ^1.3.2
   '@types/lodash-es': ^4.17.6
-  '@typescript-eslint/eslint-plugin': ^5.45.0
-  '@typescript-eslint/parser': ^5.45.0
+  '@typescript-eslint/eslint-plugin': ^5.49.0
+  '@typescript-eslint/parser': ^5.49.0
   autoprefixer: ^10.4.13
   daisyui: ^2.49.0
-  eslint: ^8.28.0
-  eslint-config-prettier: ^8.5.0
+  eslint: ^8.32.0
+  eslint-config-prettier: ^8.6.0
   eslint-plugin-svelte3: ^4.0.0
-  lodash: ^4.17.21
-  lodash-es: ^4.17.21
   postcss: ^8.4.21
-  prettier: ^2.8.0
-  prettier-plugin-svelte: ^2.8.1
-  svelte: ^3.54.0
-  svelte-check: ^3.0.1
+  prettier: ^2.8.3
+  prettier-plugin-svelte: ^2.9.0
+  svelte: ^3.55.1
+  svelte-check: ^3.0.3
   tailwindcss: ^3.2.4
   ts-pattern: ^4.1.3
-  tslib: ^2.4.1
-  typescript: ^4.9.3
-  vite: ^4.0.0
-  vitest: ^0.25.3
+  tslib: ^2.5.0
+  typescript: ^4.9.4
+  vite: ^4.0.4
+  vitest: ^0.25.8
 
 dependencies:
   '@types/lodash-es': 4.17.6
   daisyui: 2.49.0_gbtt6ss3tbiz4yjtvdr6fbrj44
-  lodash: 4.17.21
-  lodash-es: 4.17.21
   ts-pattern: 4.1.3
 
 devDependencies:
   '@playwright/test': 1.30.0
-  '@sveltejs/adapter-auto': 1.0.2_@sveltejs+kit@1.3.1
-  '@sveltejs/kit': 1.3.1_svelte@3.55.1+vite@4.0.4
+  '@sveltejs/adapter-auto': 1.0.2_@sveltejs+kit@1.3.2
+  '@sveltejs/kit': 1.3.2_svelte@3.55.1+vite@4.0.4
   '@typescript-eslint/eslint-plugin': 5.49.0_iu322prlnwsygkcra5kbpy22si
   '@typescript-eslint/parser': 5.49.0_7uibuqfxkfaozanbtbziikiqje
   autoprefixer: 10.4.13_postcss@8.4.21
@@ -261,7 +257,7 @@ packages:
       ajv: 6.12.6
       debug: 4.3.4
       espree: 9.4.1
-      globals: 13.19.0
+      globals: 13.20.0
       ignore: 5.2.4
       import-fresh: 3.3.0
       js-yaml: 4.1.0
@@ -338,17 +334,17 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@sveltejs/adapter-auto/1.0.2_@sveltejs+kit@1.3.1:
+  /@sveltejs/adapter-auto/1.0.2_@sveltejs+kit@1.3.2:
     resolution: {integrity: sha512-UXpEO/gutERZnD+Z5Vi4J/ifD3WSRuCI7xwtLJTcKNQvJ6t5Xsj1X3Mw2F8Vv/XTUuxf7xPLYUgThU331r0Y9w==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
-      '@sveltejs/kit': 1.3.1_svelte@3.55.1+vite@4.0.4
+      '@sveltejs/kit': 1.3.2_svelte@3.55.1+vite@4.0.4
       import-meta-resolve: 2.2.1
     dev: true
 
-  /@sveltejs/kit/1.3.1_svelte@3.55.1+vite@4.0.4:
-    resolution: {integrity: sha512-IjZDhByOlWiyJRsa2SQhSYsMqJu62UGMVdSP0hFWIiKOxqHjmixZwIVUBljG2YSMmb0JP3hA9/oaCdstGWRu/Q==}
+  /@sveltejs/kit/1.3.2_svelte@3.55.1+vite@4.0.4:
+    resolution: {integrity: sha512-sCJORYwK/DY4SEmlmaGSzO/7K/dpb2QXJIHy6di5FV/9p8OSeMjlbOFxZMKzW7PHH6jCaKkoApgjkbI+A/y/qw==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -1021,7 +1017,7 @@ packages:
       file-entry-cache: 6.0.1
       find-up: 5.0.0
       glob-parent: 6.0.2
-      globals: 13.19.0
+      globals: 13.20.0
       grapheme-splitter: 1.0.4
       ignore: 5.2.4
       import-fresh: 3.3.0
@@ -1194,8 +1190,8 @@ packages:
       path-is-absolute: 1.0.1
     dev: true
 
-  /globals/13.19.0:
-    resolution: {integrity: sha512-dkQ957uSRWHw7CFXLUtUHQI3g3aWApYhfNR2O6jn/907riyTYKVBmxYVROkBcY614FSSeSJh7Xm7SrUWCxvJMQ==}
+  /globals/13.20.0:
+    resolution: {integrity: sha512-Qg5QtVkCy/kv3FUSlu4ukeZDVf9ee0iXLAUYX13gbR17bnejFTzr4iS9bY7kwCf1NztRNm1t91fjOiyx4CSwPQ==}
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
@@ -1359,17 +1355,9 @@ packages:
       p-locate: 5.0.0
     dev: true
 
-  /lodash-es/4.17.21:
-    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
-    dev: false
-
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
-
-  /lodash/4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: false
 
   /loupe/2.3.6:
     resolution: {integrity: sha512-RaPMZKiMy8/JruncMU5Bt6na1eftNoo++R4Y+N2FrxkDVTrGvcyzFTsaGif4QTeKESheMGegbhw6iUAq+5A8zA==}
@@ -1697,8 +1685,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup/3.11.0:
-    resolution: {integrity: sha512-+uWPPkpWQ2H3Qi7sNBcRfhhHJyUNgBYhG4wKe5wuGRj2m55kpo+0p5jubKNBjQODyPe6tSBE3tNpdDwEisQvAQ==}
+  /rollup/3.12.0:
+    resolution: {integrity: sha512-4MZ8kA2HNYahIjz63rzrMMRvDqQDeS9LoriJvMuV0V6zIGysP36e9t4yObUfwdT9h/szXoHQideICftcdZklWg==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -2088,7 +2076,7 @@ packages:
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
-      rollup: 3.11.0
+      rollup: 3.12.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -2122,7 +2110,7 @@ packages:
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
-      rollup: 3.11.0
+      rollup: 3.12.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
